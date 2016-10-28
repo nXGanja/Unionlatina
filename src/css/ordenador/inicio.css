@@ -1,0 +1,130 @@
+* {
+	font-family: arial;
+	padding: 0px;
+	margin: 0px;
+	outline: 0px;
+	border: 0px;
+}
+
+body {
+	background: #eee;
+}
+
+header {
+	background: #fff;
+	box-shadow: 0px 1px 6px #333;
+	height: 71px;
+	z-index: 1;
+}
+
+	header .logo {
+		display: inline-block;
+		width: 71px;
+		height: 71px;
+		margin-left: 71px;
+		background-image: url(/src/img/logo.png);
+		background-repeat: no-repeat;
+		background-size: 71px 71px;
+	}
+	
+	header .enlaces {
+		display: inline-block !important;
+		position: absolute;
+		right: 0px;
+		line-height: 71px;
+	}
+
+		header .enlaces ul {
+			list-style: none;
+		}
+
+			header .enlaces ul li {
+				padding-left: 20px;
+				padding-right: 20px;
+				display: inline-block;
+				color: #444;
+				font-size: 14px;
+			}
+		
+		header .enlaces .activo {
+			color: #26a69a;
+			font-weight: bolder;
+		}
+
+	.contenido {
+		/* CSS */
+	}
+		.contenido #fondo_inicio {
+			background-color: #211e27;
+			background-image: url(/src/img/fondos/inicio.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 680px 400px;
+			height: 400px;
+		}
+			.contenido #fondo_inicio .desc {
+				background: rgba(240,240,240,0.7);
+				color: #333;
+				text-align: center;
+				font-size: 50px;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				padding: 30px;
+			}
+		
+		.contenido #ver_cursos {
+			background-color: #211e27;
+			background-image: url(/src/img/fondos/ver_cursos.jpg);
+			background-position: center;
+			background-size: 100% 100%;
+			text-align: center;
+			padding-top: 55px;
+			padding-bottom: 55px;
+		}
+		
+			.contenido #ver_cursos .desc {
+				color: #fff;
+				font-weight: normal;
+				padding-bottom: 30px;
+			}
+
+			.contenido #ver_cursos .btn_ver_cursos {
+				background: #47a74b;
+				border: 2px solid #fff;
+				cursor: pointer;
+				color: #fff;
+				font-size: 13px;
+				font-weight: bolder;
+				padding: 20px 40px;
+				transition: 400ms all;
+			}
+			
+			.contenido #ver_cursos .btn_ver_cursos:hover { background: #6ecc72; transition: 400ms all; }
+
+	footer {
+		color: #444;
+		font-size: 15px;
+		padding: 30px 0px;
+		text-align: center;
+	}
+	
+		footer .desc {
+			padding-bottom: 15px;
+		}
+		
+		footer .social {
+			font-size: 28px;
+		}
+		
+			footer .social ul {
+				color: #666;
+				list-style: none;
+			}
+				footer .social ul li {
+					cursor: pointer;
+					padding: 3px 10px;
+					display: inline-block;
+				}
+				
+				footer .social ul li:hover { color: #000; transition: 400ms all; }
